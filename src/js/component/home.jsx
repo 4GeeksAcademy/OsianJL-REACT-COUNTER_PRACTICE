@@ -1,24 +1,27 @@
 import React from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
+
 
 //create your first component
-const Home = () => {
+const Home = (props) => {
+	 
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container-fluid d-flex bg-black">
+
+			<span className="col-3"></span>
+			<span className="col-1 text-white fs-1"><FontAwesomeIcon icon={faClock} /></span>
+			<span className="col-1 text-white fs-1">{props.digitSix}</span>
+			<span className="col-1 text-white fs-1">{props.digitFive}</span>
+			<span className="col-1 text-white fs-1">{props.digitFour}</span>
+			<span className="col-1 text-white fs-1">{props.digitThree}</span>
+			<span className="col-1 text-white fs-1">{props.digitTwo}</span>
+			<span className="col-1 text-white fs-1">{props.digitOne}</span>
+			<span className="col-3"></span>
+			
+		
 		</div>
 	);
 };

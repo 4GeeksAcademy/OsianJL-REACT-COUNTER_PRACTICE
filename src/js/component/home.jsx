@@ -3,6 +3,7 @@ import React from "react";
 //include images into your bundle
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
+import {SecondsCounter} from "./secondscounter";
 
 
 //create your first component
@@ -23,6 +24,12 @@ const Home = (props) => {
 			
 		
 		</div>
+		// <div>
+		// 	<SecondsCounter />
+		// </div>
+		// Aqui estoy intentando insertar el Componente SecondsCounter dentro del componente "home", 
+		// pero por algún motivo desconocido, no me deja...
+		 
 	);
 };
 

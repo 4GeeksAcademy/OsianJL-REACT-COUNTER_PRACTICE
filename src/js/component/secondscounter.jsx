@@ -4,15 +4,15 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const SecondsCounter = (props) => {
+const SecondsCounter = () => {
 	 
 	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!{props.digitOne}</h1>
-			<h1 className="text-center mt-5">Hello Rigo!{props.digitTwo}</h1>
-			<h1 className="text-center mt-5">Hello Rigo!{props.digitThree}</h1>
-			<h1 className="text-center mt-5">Hello Rigo!{props.digitFour}</h1>
-			<h1 className="text-center mt-5">Hello Rigo!{props.digitFive}</h1>
+			<h1 className="text-center mt-5">Hello</h1>
+			<h1 className="text-center mt-5">Hello</h1>
+			<h1 className="text-center mt-5">Hello</h1>
+			<h1 className="text-center mt-5">Hello</h1>
+			<h1 className="text-center mt-5">Hello</h1>
 		
 		</div>
 	);
